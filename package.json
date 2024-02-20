@@ -2,7 +2,7 @@
   "name": "MyPlayground",
   "displayName": "My Playground",
   "description": "This extension is used for experimental testing of code and new functions.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
   "license": "SEE LICENSE IN LICENSE",
