@@ -34,8 +34,21 @@ function initGitHubFileFetcher(context: vscode.ExtensionContext) {
             newRepoFound : Boolean = false,
             searchOwnerString : string = '-- Search Owner --',
             searchRepoString : string = '-- Search Repository --',
+            options : any = {},
             config = vscode.workspace.getConfiguration('gitHubFileFetcher'),
             repositories = Object.assign([], config.repositories);
+
+        if (
+            config.githubUsername
+            && config.githubToken
+            && config.githubUsername.length > 0
+            && config.githubToken.length > 0
+        ){
+            let credentials = btoa(`${config.githubUsername}:${config.githubToken}`);
+            options = {
+                headers: {'Authorization': `Basic ${credentials}`}
+            };
+        }
 
         if (!repositories.includes(searchRepoString)) {
             repositories.unshift(searchRepoString);
@@ -93,7 +106,7 @@ function initGitHubFileFetcher(context: vscode.ExtensionContext) {
                 vscode.window.showInformationMessage(`GitHubFileFetcher: Fetching ${value} from url: "${url}".`);
             }
 
-            response = await fetch(url);
+            response = await fetch(url, options);
             json = await response.json();
 
             Object.keys(json.items).forEach(function (index) {
@@ -123,7 +136,7 @@ function initGitHubFileFetcher(context: vscode.ExtensionContext) {
             vscode.window.showInformationMessage(message);
         }
 
-        response = await fetch(url);
+        response = await fetch(url, options);
         json = await response.json();
         let branches: string[] = [];
 
@@ -154,7 +167,7 @@ function initGitHubFileFetcher(context: vscode.ExtensionContext) {
             vscode.window.showInformationMessage(message);
         }
 
-        response = await fetch(url);
+        response = await fetch(url, options);
         json = await response.json();
         let files : string[] = [];
 
@@ -203,7 +216,7 @@ function initGitHubFileFetcher(context: vscode.ExtensionContext) {
             vscode.window.showInformationMessage(`GitHubFileFetcher: Fetching file data for file: "${file}" from branch: "${branch}" from url: "${url}".`);
         }
 
-        response = await fetch(url);
+        response = await fetch(url, options);
         json = await response.json();
         if (json.message) {
             vscode.window.showErrorMessage(`GitHubFileFetcher: ${json.message}.`);

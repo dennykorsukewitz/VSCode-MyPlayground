@@ -85,6 +85,7 @@
       "title": "GitHub File Fetcher",
       "properties": {
         "gitHubFileFetcher.informationMessages": {
+          "order": 1,
           "type": "string",
           "description": "Information messages will be displayed.",
           "default": "true",
@@ -100,6 +101,7 @@
           ]
         },
         "gitHubFileFetcher.repositories": {
+          "order": 2,
           "type": "array",
           "items": {
             "type": "string"
@@ -108,6 +110,16 @@
           "default": [
             "dennykorsukewitz/VSCode-GitHubFileFetcher"
           ]
+        },
+        "gitHubFileFetcher.githubUsername": {
+          "order": 3,
+          "type": "string",
+          "description": "The GitHub API is limited to 60 requests per hour for non authorized requests. You can provide your GitHub username and an access token to push this limit to 5000 requests per hour."
+        },
+        "gitHubFileFetcher.githubToken": {
+          "order": 4,
+          "type": "string",
+          "description": "The GitHub API is limited to 60 requests per hour for non authorized requests. You can provide your GitHub username and an access token to push this limit to 5000 requests per hour."
         }
       }
     }
