@@ -13,7 +13,7 @@
 
 | Status |
  | ------ |
-| [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-MyPlayground/0.0.2/dev)](https://github.com/dennykorsukewitz/VSCode-MyPlayground/compare/0.0.2...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) |
+| [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-MyPlayground/0.0.3/dev)](https://github.com/dennykorsukewitz/VSCode-MyPlayground/compare/0.0.3...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) |
 
 ---
 
