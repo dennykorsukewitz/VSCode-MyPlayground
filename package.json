@@ -60,7 +60,7 @@
     "esbuild": "^0.28.0",
     "eslint": "^10.0.2",
     "mocha": "^11.1.0",
-    "typescript": "^6.0.2"
+    "typescript": "^7.0.2"
   },
   "overrides": {
     "minimatch": "5.1.2",
