@@ -1,6 +1,7 @@
-# [2.0.1] - 2024-04-22
+# [0.0.3] - 2024-04-23
 
 ## Changed
 
 - Updated icon.
-- Changed release workflow to reusable.release.vscode.yml.
+- Renamed the compile script to build.
+- Tidied the readme.

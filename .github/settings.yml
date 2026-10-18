@@ -9,7 +9,7 @@ repository:
   homepage: https://dennykorsukewitz.github.io/VSCode-MyPlayground/
 
   # A comma-separated list of topics to set on the repository
-  topics: extension, VisualStudioCode, VSC, my, playground, MyPlayground
+  topics: pages, extension, VisualStudioCode, VSC, my, playground, MyPlayground
 
   # Either `true` to make the repository private, or `false` to make it public.
   private: false
@@ -42,52 +42,63 @@ repository:
   # rebase-merging.
   allow_rebase_merge: false
 
+  # Either `true` to enable automatic deletion of branches on merge, or `false` to disable
+  delete_branch_on_merge: true
+
+  # Either `true` to enable automated security fixes, or `false` to disable
+  # automated security fixes.
+  enable_automated_security_fixes: true
+
+  # Either `true` to enable vulnerability alerts, or `false` to disable
+  # vulnerability alerts.
+  enable_vulnerability_alerts: true
+
 # Labels: define labels for Issues and Pull Requests
 labels:
   - name: dev
-    color: "#44cc11"
+    color: '#44cc11'
     description: Default Branch
 
   - name: Bug
-    color: "#FF0000"
+    color: '#FF0000'
     description: An issue with the system.
 
   - name: Documentation
-    color: "#EB9419"
+    color: '#EB9419'
     description: Improvements or additions to documentation.
 
   - name: Feature
-    color: "#428BCA"
+    color: '#428BCA'
     description: New functionality.
 
   - name: Duplicate
-    color: "#cfd3d7"
+    color: '#cfd3d7'
     description: This issue or pull request already exists.
 
   - name: Refactoring
-    color: "#7F8C8D"
+    color: '#7F8C8D'
     description: Refactoring is needed.
 
   - name: WontFix
-    color: "#000000"
+    color: '#000000'
     description: This will not be worked on.
 
   - name: Unit Test
-    color: "#2ea7b2"
+    color: '#2ea7b2'
     description: Unit Test.
 
   - name: Clarification
-    color: "#3399FF"
+    color: '#3399FF'
     description: Clarification of the current situation.
 
   - name: Verified
-    color: "#b8e550"
+    color: '#b8e550'
     description: This issue or pull request was verified.
 
   - name: Verification
-    color: "#e8dd45"
+    color: '#e8dd45'
     description: This issue or pull request needs a verification.
 
   - name: Progress
-    color: "#AD8D43"
+    color: '#AD8D43'
     description: This is in Progress.

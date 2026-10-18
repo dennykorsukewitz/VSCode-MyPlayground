@@ -1,21 +1,19 @@
-<img align="right" width="150" height="150" src="doc/images/icon.png">
-
 # MyPlayground
+
+<img align="right" width="150" height="150" src="doc/images/icon.png" alt="MyPlayground extension icon">
 
 **MyPlayground** is an extension that is used for experimental testing of code and new functions.
 
-| Repository | GitHub | Visual Studio Marketplace |
-| ------ | ------ | ------ |
-| ![GitHub release (latest by date)](https://img.shields.io/github/v/release/dennykorsukewitz/VSCode-MyPlayground) | ![GitHub open issues](https://img.shields.io/github/issues/dennykorsukewitz/VSCode-MyPlayground) ![GitHub closed issues](https://img.shields.io/github/issues-closed/dennykorsukewitz/VSCode-MyPlayground?color=#44CC44) | ![Visual Studio Marketplace last-updated](https://img.shields.io/visual-studio-marketplace/last-updated/dennykorsukewitz.MyPlayground) ![Visual Studio Marketplace Version ](https://img.shields.io/visual-studio-marketplace/v/dennykorsukewitz.MyPlayground) |
-| ![GitHub license](https://img.shields.io/github/license/dennykorsukewitz/VSCode-MyPlayground) | ![GitHub pull requests](https://img.shields.io/github/issues-pr/dennykorsukewitz/VSCode-MyPlayground?label=PR) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/dennykorsukewitz/VSCode-MyPlayground?color=g&label=PR) | ![Visual Studio Marketplace Rating release-date](https://img.shields.io/visual-studio-marketplace/release-date/dennykorsukewitz.MyPlayground) |
-| ![GitHub language count](https://img.shields.io/github/languages/count/dennykorsukewitz/VSCode-MyPlayground?style=flat&label=language)  | ![GitHub contributors](https://img.shields.io/github/contributors/dennykorsukewitz/VSCode-MyPlayground) | ![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/dennykorsukewitz.MyPlayground) ![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/dennykorsukewitz.MyPlayground) |
-| ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dennykorsukewitz/VSCode-MyPlayground)  | ![GitHub downloads](https://img.shields.io/github/downloads/dennykorsukewitz/VSCode-MyPlayground/total?style=flat) | ![VSC marketplace download](https://img.shields.io/visual-studio-marketplace/d/dennykorsukewitz.MyPlayground) ![VSC marketplace install](https://img.shields.io/visual-studio-marketplace/i/dennykorsukewitz.MyPlayground) |
+|Repository|GitHub|Visual Studio Marketplace|
+|---|---|---|
+|![GitHub release (latest by date)](https://img.shields.io/github/v/release/dennykorsukewitz/VSCode-MyPlayground)|![GitHub open issues](https://img.shields.io/github/issues/dennykorsukewitz/VSCode-MyPlayground) ![GitHub closed issues](https://img.shields.io/github/issues-closed/dennykorsukewitz/VSCode-MyPlayground?color=#44CC44)|![Visual Studio Marketplace version](https://vsmarketplacebadges.dev/version-short/dennykorsukewitz.MyPlayground.svg)|
+|![GitHub license](https://img.shields.io/github/license/dennykorsukewitz/VSCode-MyPlayground)|![GitHub pull requests](https://img.shields.io/github/issues-pr/dennykorsukewitz/VSCode-MyPlayground?label=PR) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/dennykorsukewitz/VSCode-MyPlayground?color=g&label=PR)|![Visual Studio Marketplace installs](https://vsmarketplacebadges.dev/installs-short/dennykorsukewitz.MyPlayground.svg)|
+|![GitHub language count](https://img.shields.io/github/languages/count/dennykorsukewitz/VSCode-MyPlayground?style=flat&label=language)|![GitHub contributors](https://img.shields.io/github/contributors/dennykorsukewitz/VSCode-MyPlayground)|![Visual Studio Marketplace rating stars](https://vsmarketplacebadges.dev/rating-star/dennykorsukewitz.MyPlayground.svg) ![Visual Studio Marketplace rating](https://vsmarketplacebadges.dev/rating-short/dennykorsukewitz.MyPlayground.svg)|
+|![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/dennykorsukewitz/VSCode-MyPlayground)|![GitHub downloads](https://img.shields.io/github/downloads/dennykorsukewitz/VSCode-MyPlayground/total?style=flat)|![Visual Studio Marketplace downloads](https://vsmarketplacebadges.dev/downloads-short/dennykorsukewitz.MyPlayground.svg)|
 
-| Status |
- | ------ |
-| [![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-MyPlayground/0.0.3/dev)](https://github.com/dennykorsukewitz/VSCode-MyPlayground/compare/0.0.3...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) |
-
----
+|Status|
+|---|
+|[![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-MyPlayground/0.0.3/dev)](https://github.com/dennykorsukewitz/VSCode-MyPlayground/compare/0.0.3...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) ![GitHub Workflow UnitTest](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/unittest.yml/badge.svg?branch=dev&style=flat&label=UnitTest) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages)|
 
 ## Installation
 
