@@ -3,7 +3,7 @@ repository:
   name: VSCode-MyPlayground
 
   # A short description of the repository that will show up on GitHub
-  description: This extension is used for experimental testing of code and new functions.
+  description: "Small games in the sidebar. Scores stay on this machine."
 
   # A URL with more information about the repository
   homepage: https://dennykorsukewitz.github.io/VSCode-MyPlayground/

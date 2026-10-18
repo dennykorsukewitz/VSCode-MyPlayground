@@ -2,7 +2,7 @@
 
 <img align="right" width="150" height="150" src="doc/images/icon.png" alt="MyPlayground extension icon">
 
-**MyPlayground** is an extension that is used for experimental testing of code and new functions.
+**MyPlayground** is an extension that puts small games in the side bar. Scores stay on this machine. Snake is the first game.
 
 |Repository|GitHub|Visual Studio Marketplace|
 |---|---|---|
@@ -13,7 +13,19 @@
 
 |Status|
 |---|
-|[![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-MyPlayground/0.0.3/dev)](https://github.com/dennykorsukewitz/VSCode-MyPlayground/compare/0.0.3...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) ![GitHub Workflow UnitTest](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/unittest.yml/badge.svg?branch=dev&style=flat&label=UnitTest) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages)|
+|[![GitHub commits since tagged version](https://img.shields.io/github/commits-since/dennykorsukewitz/VSCode-MyPlayground/1.0.0/dev)](https://github.com/dennykorsukewitz/VSCode-MyPlayground/compare/1.0.0...dev) ![GitHub Workflow Lint](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/lint.yml/badge.svg?branch=dev&style=flat&label=Lint) ![GitHub Workflow UnitTest](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/unittest.yml/badge.svg?branch=dev&style=flat&label=UnitTest) ![GitHub Workflow Pages](https://github.com/dennykorsukewitz/VSCode-MyPlayground/actions/workflows/pages.yml/badge.svg?branch=dev&style=flat&label=GitHub%20Pages)|
+
+## Feature
+
+Open the **My Playground** icon in the activity bar. **Scores** lists the best result of every game. Each game links to that list. A result stays on this machine.
+
+### Snake
+
+The board starts on its own.
+
+Click the board, then steer with the arrow keys or WASD. The buttons under the board work without keyboard focus. The restart button sits in the view title.
+
+The snake speeds up every four snacks. Hitting a wall or itself ends the run. Filling the board clears it. The best score is stored in the extension global state.
 
 ## Installation
 

@@ -1,8 +1,8 @@
 {
   "name": "MyPlayground",
   "displayName": "My Playground",
-  "description": "This extension is used for experimental testing of code and new functions.",
-  "version": "0.0.3",
+  "description": "Small games in the sidebar. Scores stay on this machine.",
+  "version": "1.0.0",
   "publisher": "dennykorsukewitz",
   "icon": "doc/images/icon.png",
   "license": "SEE LICENSE IN LICENSE",
@@ -22,7 +22,10 @@
   "keywords": [
     "my",
     "playground",
-    "MyPlayground"
+    "MyPlayground",
+    "snake",
+    "game",
+    "games"
   ],
   "categories": [
     "Other"
@@ -30,7 +33,12 @@
   "engines": {
     "vscode": "^1.85.0"
   },
-  "activationEvents": [],
+  "activationEvents": [
+    "onView:myPlayground.scores",
+    "onView:myPlayground.snake",
+    "onCommand:myPlayground.showScores",
+    "onCommand:myPlayground.snake.newGame"
+  ],
   "main": "./dist/extension.js",
   "browser": "./dist/extension.js",
   "scripts": {
@@ -47,20 +55,18 @@
     "test": "node ./dist/test/runTest.js",
     "open-in-browser": "npm run build-web && npx @vscode/test-web --extensionDevelopmentPath=."
   },
-  "dependencies": {
-    "base64-to-uint8array": "^1.0.0"
-  },
   "devDependencies": {
-    "@types/glob": "^9.0.0",
     "@types/mocha": "^10.0.1",
     "@types/node": "^26.0.1",
     "@types/vscode": "^1.85.0",
+    "@vscode/test-electron": "^3.0.0",
     "@typescript-eslint/eslint-plugin": "^8.25.0",
     "@typescript-eslint/parser": "^8.25.0",
     "esbuild": "^0.28.0",
+    "eslint-plugin-n": "^18.0.1",
     "eslint": "^10.0.2",
     "mocha": "^12.0.2",
-    "typescript": "^7.0.2"
+    "typescript": "^5.9.0"
   },
   "overrides": {
     "minimatch": "5.1.2",
@@ -68,16 +74,51 @@
   },
   "contributes": {
     "commands": [
-        {
-            "command": "outliner.outline",
-            "title": "Outline"
-        }
+      {
+        "command": "myPlayground.showScores",
+        "title": "My Playground: Show Scores",
+        "icon": "$(list-ordered)"
+      },
+      {
+        "command": "myPlayground.snake.newGame",
+        "title": "My Playground: New Snake Game",
+        "icon": "$(debug-restart)"
+      }
     ],
-    "views": {
-    "explorer": [
+    "viewsContainers": {
+      "activitybar": [
         {
-          "id": "documentOutline",
-          "name": "Document Outline"
+          "id": "myPlayground",
+          "title": "My Playground",
+          "icon": "doc/images/snake.svg"
+        }
+      ]
+    },
+    "views": {
+      "myPlayground": [
+        {
+          "type": "webview",
+          "id": "myPlayground.scores",
+          "name": "Scores"
+        },
+        {
+          "type": "webview",
+          "id": "myPlayground.snake",
+          "name": "Snake"
+        }
+      ]
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "myPlayground.showScores",
+          "when": "view =~ /^myPlayground\\./ && view != 'myPlayground.scores'",
+          "group": "navigation"
+        },
+        {
+          "command": "myPlayground.snake.newGame",
+          "when": "view == 'myPlayground.snake'",
+          "group": "navigation"
         }
       ]
     }
